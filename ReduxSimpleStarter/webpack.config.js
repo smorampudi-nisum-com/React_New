@@ -21,6 +21,17 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
+    contentBase: './',
+    watchOptions: {
+      aggregateTimeout: 300,
+      poll: 1000
+    }
+  },
+  watchOptions: {
+    aggregateTimeout: 300,
+    poll: 1000
   }
+
+  // Afterwards, the devServer property 
+  // might look like this:
 };
